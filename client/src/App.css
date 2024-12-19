@@ -1,0 +1,61 @@
+body{
+    background-color: #f0f8ff;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    background-color: #d2e7f9;;
+    border: 1px solid #ccc;
+}
+input{
+    margin: 10px;
+}
+textarea{
+    margin: 10px;
+}
+.divi{
+        border: 1px solid black;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        flex-direction: column;
+}
+ul{
+    border: 1px solid black;
+    padding: 10px;
+    width: 90%;
+}
+li{
+    display: flex; /* Usa flexbox para alinear el contenido */
+    margin: 5px 0; /* Espaciado entre elementos */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+span{
+    width: 90%;
+}
+.buttonEdit,.buttonDelete{
+    margin-left: 5px; /* Espaciado entre botones */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.buttonAdd{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(141, 127, 251);   
+}
+.buttonEdit{
+    background-color: rgb(255, 253, 127);
+}
+.buttonDelete{
+    background-color: rgb(255, 127, 142);
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getTareas, addTarea, deleteTarea, updateTarea } from './api';
-
+import './App.css'
 function App() {
   const [tareas, setTareas] = useState([]);
   const [nombre, setNombre] = useState('');
@@ -58,7 +58,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='divi'>
       <h1>CRUD de Tareas</h1>
       <form onSubmit={handleSubmit}>
         <input
@@ -73,14 +73,14 @@ function App() {
           placeholder="Descripción"
           required
         />
-        <button type="submit">{editId ? 'Actualizar' : 'Agregar'}</button>
+        <button className='buttonAdd' type="submit">{editId ? 'Actualizar' : 'Agregar'}</button>
       </form>
       <ul>
         {tareas.map((tarea) => (
           <li key={tarea.id}>
-            {tarea.nombre} - {tarea.descripcion}
-            <button onClick={() => handleEdit(tarea)}>Editar</button>
-            <button onClick={() => handleDelete(tarea.id)}>Eliminar</button>
+            <span>{tarea.nombre} - {tarea.descripcion}</span>
+            <button className='buttonEdit' onClick={() => handleEdit(tarea)}>Editar</button>
+            <button className='buttonDelete' onClick={() => handleDelete(tarea.id)}>Eliminar</button>
 
           </li>
         ))}
